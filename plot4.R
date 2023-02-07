@@ -27,3 +27,8 @@ legend("topright", col = c("black", "red", "blue"), lty = 1, lwd = 2, bty = "n",
 #Recreating plot 2 but with Global reactive power instead:
 plot(sub_data$Global_reactive_power ~ sub_data$dateTime, type = "l", ylab = "Global Reactive Power (kilowatts)", xlab = "datetime")
 
+
+## Saving to file
+dev.copy(png, file="plot4.png", height=480, width=480)
+dev.off()
+

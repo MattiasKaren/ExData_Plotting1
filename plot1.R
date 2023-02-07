@@ -7,3 +7,6 @@ View(sub_data)
 
 hist(sub_data$Global_active_power, col = "red", main = "Global Active Power", xlab = "Global Active Power (kilowatts")
 
+## Saving to file
+dev.copy(png, file="plot1.png", height=480, width=480)
+dev.off()

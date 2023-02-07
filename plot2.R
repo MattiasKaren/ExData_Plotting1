@@ -10,3 +10,6 @@ sub_data$dateTime <- as.POSIXct(dateTime)
 
 plot(sub_data$Global_active_power ~ sub_data$dateTime, type = "l", ylab = "Global Active Power (kilowatts)", xlab = "")
 
+## Saving to file
+dev.copy(png, file="plot2.png", height=480, width=480)
+dev.off()
